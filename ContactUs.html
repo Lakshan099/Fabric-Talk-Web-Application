@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ContactUs</title>
+<link rel="stylesheet" type="text/css" href="ContactStyle.css"/>
+</head>
+
+<body>
+<table width="1230" height="717" border="0" align="center">
+  <tbody>
+    <tr>
+      <td height="119" colspan="5"><img src="Pictures/logo.png" width="84" height="105" alt=""/>
+      <input type="button" name="button" id="button" value="Sign up">
+      <input type="button" name="button2" id="button2" value="Log in"></td>
+    </tr>
+    <tr>
+      <td width="220" height="30" align="center" bgcolor="#c4996c"><div class="tabs"><a href="index.html">Home</a></div></td>
+      <td width="227" align="center" bgcolor="#c4996c"><div class="tabs"><a href="AboutUs.html">About us</a></div></td>
+      <td width="249" align="center" bgcolor="#c4996c"><div class="tabs"><a href="Bedcovers.php">Beadcovers</a></div></td>
+      <td width="262" align="center" bgcolor="#c4996c"><div class="tabs"><a href="Curtains.html">Curtains</a></div></td>
+      <td width="240" align="center" bgcolor="#c4996c"><div class="tabs"><a href="ContactUs.html">Contact us</a></div></td>
+    </tr>
+    <tr>
+      <td height="36" colspan="7">
+	<div class="container">
+  	<div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>For more details leave us a message</p>
+  	</div>
+	  <div class="row">
+		<div class="column">
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63400.30940553433!2d79.93299877229889!3d6.706288576304086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24932d50eaea1%3A0x7f69b61ef0848cf3!2sFabric%20Talk!5e0!3m2!1sen!2slk!4v1636909019263!5m2!1sen!2slk" width="580" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="column">
+		  <form action="GetContact.php" method="post">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="Sri Lanka">Sri Lanka</option>
+			  <option value="India">India</option>
+			  <option value="usa">USA</option>
+			</select>
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write here.." style="height:170px"></textarea>
+			<input type="submit" name="btnsubmit" id="btnsubmit" value="Submit">
+		  </form>
+		</div>
+	  </div>
+	</div>
+
+	</td>
+    </tr>
+    <tr>
+       <td height="68" colspan="7" bgcolor="#464646"><div class="p1">
+      <p>All Rights Reserved. © 2021</p>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

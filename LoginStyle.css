@@ -1,0 +1,73 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+table{
+	
+	padding: 20px 10px;
+	border: 3px solid #;
+	bottom: auto;
+	background-color: #F1F1F1;
+}
+
+h2{
+	text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #c4996c;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+  left: 70px
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color:#4b4b4d;
+  position: relative;
+  left: 0px
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+a 
+{ 
+	text-decoration: none;
+	color: #0f1b80;
+}
+
+a:hover {
+  opacity: 0.8;
+}

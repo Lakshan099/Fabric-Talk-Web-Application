@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign up</title>
+<link rel="stylesheet" type="text/css" href="SignupStyle.css" />
+	
+<script type="text/javascript" language="javascript">
+
+	function validateFristName()
+	{
+		var fname = document.getElementById("txtFristName").value;
+		
+		if((fname == "") || (fname == null))
+			{
+				alert("Please enter Frist name");
+				return false;
+			}
+		 
+		return true;	
+	}
+	
+	function validateLastName()
+	{
+		var lname = document.getElementById("txtLastNameName").value;
+		
+		if((lname == "") || (lname == null))
+			{
+				alert("Please enter Last name");
+				return false;
+			}
+		 
+		return true;	
+	}
+	
+	function validatePhoneNumber()
+	{
+		var num = document.getElementById("txtPhone").value;
+		
+		if((isNaN(num)) || num == "")
+		{
+			alert("Please enter valid phone number");
+			return false;
+		}
+		
+		return true;
+	}
+	
+	function validateEmail()
+	{
+		var email = document.getElementById("txtEmail").value;
+		var at = email.indexOf("@");
+		var dt = email.lastIndexOf(".");
+		var len = email.length;
+		
+		if((at < 2) || (dt-at < 2) || (len-dt < 2))
+			{
+				alert("Please enter valid email address");
+				return false;
+			}
+			alert("email correct");
+			return true;
+	}
+	
+	function validatePassword()
+	{
+		var password = document.getElementById("txtPassword").value;
+		var Cpassword = document.getElementById("txtCpassword").value;
+		
+		if((password.length > 8) || (password != Cpassword))
+			{
+				alert("Please enter the correct password")
+				return false;
+			}
+				return true;
+	}
+	
+	function validateOption()
+	{
+		if((document.getElementById("rdoOption_1").checked) || (document.getElementById("rdoOption_1").checked))
+			{
+				return true;
+			}
+		alert("please select on option");
+		return false;
+	}
+	
+	function validateGender()
+	{
+		
+		if(document.getElementById("Not  Selected").value == "1")
+			{
+				alert("Please selet valid option");
+				return false;
+			}
+		return true;
+	}
+	
+	function validateAddress()
+	{
+		var address = document.getElementById("txtAddress").value;
+		
+		if((address == "") || (address == null))
+			{
+				alert("Please enter valid Address");
+				return false;
+			}
+		 
+		return true;	
+	}
+	
+	function validateAll()
+	{
+		if(validateFristName() && validateLastName() && validatePhoneNumber() && validateEmail() && validatePassword() && validateOption() && validateGender())
+			{
+				alert("Successfully signed up..!!");
+			}
+		else
+			{
+				event.preventDefault();
+			}
+	}
+
+	
+</script>
+	
+</head>
+
+<body>
+	
+<br><br>
+<div>
+<form action="GetSignUp.php" method="post" >
+  <table width="676" height="731" border="0" align="center">
+    <tbody>
+      <tr>
+        <td height="74" colspan="2"><h1>Sign up</h1></td>
+      </tr>
+      <tr>
+        <td width="349" height="64"><p>First Name
+        </p>
+          <p>
+            <input type="text" name="txtFristName" id="txtFristName" placeholder="Your name.." required/>
+      </p></td>
+        <td width="300"><p>Last Name</p>
+        <p>
+          <input type="text" name="txtLastName" id="txtLastName" placeholder="Your last name.." required/>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="64"><p>Phone Number</p>
+        <p>
+          <input type="text" name="txtPhone" id="txtPhone" placeholder="071xxxxxxx" maxlength = "10" required/>
+        </p></td>
+        <td><p>Email</p>
+          <p>
+		    <input type="text" name="txtEmail" id="txtEmail" placeholder="email.." required/>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="64"><p>Password</p>
+        <p>
+          <input type="password" name="txtPassword" id="txtPassword" maxlength = "8"  placeholder="password" required/>
+        </p></td>
+        <td><p>Confirm Password</p>
+        <p>
+          <input type="password" name="txtCpassword" id="txtCpassword" maxlength = "8" placeholder="re-enter password" required/>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="64"><p>Birth Day</p>
+        <p>
+          <input type="date" name="Bdate" id="Bdate">
+        </p></td>
+        <td><p>ID Card Number</p>
+        <p>
+          <input type="text" name="txtID" id="txtID" pattern="[0-9]{9}[Vv]" placeholder="99xxxxxxxV" required/>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="50"><p>Your Address</p>
+        <p>
+          <textarea name="txtAddress" id="txtAddress" required></textarea>
+        </p></td>
+        <td><p>Gender</p>
+        <p>
+          <select name="select" id="select">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <option value="Not  Selected" selected="selected">Not  Selected</option>
+          </select>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88"><p>Service type</p>
+        <p>
+          <input type="radio" name="rdoOption" id="rdoOption_1" value="Real Time" required/>
+          <label for="radio">Real Time </label>
+        </p>
+        <p>
+          <input type="radio" name="rdoOption" id="rdoOption_2" value="Non Real Time" required/>
+          <label for="radio2">Non Real Time </label>
+        </p></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td> </td>
+      </tr>
+      <tr>
+		  <td height="28" colspan="2"><p><input type="checkbox" name="chkAgree" id="chkAgree" required/>
+          If you agree with our terms and conditions</p></td>
+      </tr>
+      <tr>
+        <td height="51"><input type="submit" name="btnsubmit" id="btnsubmit" value="Submit" onClick="validateAll()"> <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+</div>	
+	
+</body>
+</html>

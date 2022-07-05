@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	
+input[type=submit] {
+  width: 10%;
+  background-color: #c4996c;
+  color: white;
+  padding: 10px 10px;
+  margin: 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  bottom: 20px;
+  left: 150px;
+}
+
+input[type=submit]:hover 
+{
+  background-color: #c4ad96;
+}
+	
+input[type=text]
+{
+  width: 20%;
+  padding: 20px;
+
+}
+	
+p
+{
+	text-align: justify;
+  	text-justify: inter-word;
+	position: relative;	  
+	text-align:left;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 15px;
+}
+
+div {
+  border-radius: 70px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+	
+</style>	
+</head>
+<body>
+<br><br><br><br>
+<div>
+<table width="746" height="410" border="0" align="center">
+<tr>
+	<td>
+		<form method="post" action="https://sandbox.payhere.lk/pay/checkout">   
+			<input type="hidden" name="merchant_id" value="1218792">    <!-- Replace your Merchant ID -->
+			<input type="hidden" name="return_url" value="http://sample.com/return">
+			<input type="hidden" name="cancel_url" value="http://sample.com/cancel">
+			<input type="hidden" name="notify_url" value="http://sample.com/notify">  
+			<br><br><p><b>Item Details</b></p><br>
+			<input type="text" name="currency" value="ID - 01">
+			<input type="text" name="amount" value="Rs 1450/=">  
+			<br><br><p><b>Customer Details</b></p><br>
+			<input type="text" name="first_name" placeholder="Your Frist Name">
+			<input type="text" name="last_name" placeholder="Your Last Name"><br><br>
+			<input type="text" name="email" placeholder="Email">
+			<input type="text" name="phone" placeholder="Mobile Number"><br><br>
+			<input type="text" name="address" placeholder="Address">
+			<input type="text" name="city" placeholder="City">
+			<input type="hidden" name="country" value="Sri Lanka">
+			<br><br><br><br>
+			<input type="submit" value="Buy Now"></form> 
+</td>
+	</tr>		
+</table>  
+</div>	
+</body>
+</html>

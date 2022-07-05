@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.p1
+{
+	text-align: center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+	font-size: 50px;
+	color: white;
+}
+
+input[type=button] {
+  width: 30%;
+  background-color: #c4996c;
+  color: white;
+  padding: 10px 10px;
+  margin: 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  bottom: -5px;
+  left: 110px;
+
+}
+
+input[type=button]:hover 
+{
+  background-color: #c4ad96;
+}
+
+div.p2
+{
+	text-align: center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+}
+
+div.p3
+{
+	text-align: left;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+}
+
+div.p4
+{
+	color: white;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align:center;
+
+}

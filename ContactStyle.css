@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+div.tabs
+{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+}
+
+input[type=button] {
+  width: 10%;
+  background-color: #c4996c;
+  color: white;
+  padding: 10px 10px;
+  margin: 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  bottom: 20px;
+  left: 873px;
+}
+
+input[type=button]:hover 
+{
+  background-color: #c4ad96;
+}
+
+div.logo
+{
+	position: relative;
+	bottom: -20px;
+}
+
+a 
+{ 
+	text-decoration: none;
+	color: black;
+}
+
+a:hover
+{
+	color: #FFFFFF;
+}
+
+div.label
+{
+	background-color: cadetblue;
+}
+
+p
+{
+	text-align: justify;
+  	text-justify: inter-word;
+	position: relative;	  
+	text-align:center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+div.p1
+{
+	color: white;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #c4996c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c4ad96;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
